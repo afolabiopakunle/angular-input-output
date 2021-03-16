@@ -1,0 +1,21 @@
+<div class="form-check">
+    <input class="form-check-input" [(ngModel)]="staffType" value="admin" type="radio" name="staffType" id="admin">
+    <label class="form-check-label" for="admin">
+        Admin
+    </label>
+</div>
+<div class="form-check">
+    <input class="form-check-input" [(ngModel)]="staffType" value="supervisor" type="radio" name="staffType" id="supervisor" checked>
+    <label class="form-check-label" for="supervisor">
+        Supervisor
+    </label>
+</div>
+<div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" [(ngModel)]="name" class="form-control" id="name">
+</div>
+<div class="form-group">
+    <label for="description">Description</label>
+    <textarea name="description" [(ngModel)]="description" id="description" class="form-control" cols="30"></textarea>
+</div>
+<button class="btn btn-primary" (click)="submit()">Submit</button>
